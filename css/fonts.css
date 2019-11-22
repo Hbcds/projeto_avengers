@@ -1,0 +1,12 @@
+@font-face {
+	font-family: avangers;
+	src: url(docs/avangers);
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: avangers;
+}
+
+p{
+	font-family: avangers;
+}

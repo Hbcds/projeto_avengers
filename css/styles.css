@@ -1,0 +1,89 @@
+#bd{
+	background-image:url("../img/logo2.gif");
+	background-position: center;
+	background-color: #cccccc;
+	background-size: content;
+}
+
+#navs{
+	background-color:#343a40;
+}
+#font{}
+#font1{}
+#font2{}
+#font3{}
+
+div.cap{
+
+	width:100%;
+}
+
+div.iron{
+
+	width:100%;
+	
+
+}
+
+div.hulk{
+
+	width:100%;
+
+}
+
+div.viuva{
+
+	width:100%;
+
+}
+
+div.thor{
+
+	width:100%;
+
+}
+
+div.gaviao{
+
+	width:100%;
+
+}
+
+div.rolagem{
+	width: 100%;
+	height: 337px;
+	overflow-x: scroll;
+	
+}
+
+p{
+	color:white;
+}
+h1,h2, h3{
+	color:#98B1DC;
+}
+
+/* scroll */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px grey; 
+border-radius: 10px}
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+border-radius: 10px}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #b30000}
+
+  
