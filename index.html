@@ -1,300 +1,383 @@
 <!doctype html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<!-- ÍCONE DO ESCUDO NA ABA DA GUIA -->
-		<link rel="icon" href="img/escudo.jpg">
-		
-		<!-- PRECISA USAR ESSAS CDN PARA FUNCIONAMENTO DO JAVASCRIPT COMPILADO -->
-		
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		
-		<title>The Avengers</title>
-		<!--Bootstrap JS -->
-		<script type="text/javascript" src="js/bootstrap.js"> </script>
-		<script type="text/javascript" src="js/funcoes.js"> </script>
 
-		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		
-		<!-- Custom styles for this template -->
-		<link href="css/carousel.css" rel="stylesheet">
-	
-	</head>
-	<body id="bd">
-		<header>
-			<nav id="navs" class="navbar navbar-expand-md navbar-dark fixed-top">
-				<a id="font" class="navbar-brand" href="index.html">The Avengers</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- ÍCONE DO ESCUDO NA ABA DA GUIA -->
+    <link rel="icon" href="img/escudo.jpg">
+
+    <!-- PRECISA USAR ESSAS CDN PARA FUNCIONAMENTO DO JAVASCRIPT COMPILADO -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <title>The Avengers</title>
+    <!--Bootstrap JS -->
+    <script type="text/javascript" src="js/bootstrap.js">
+    </script>
+    <script type="text/javascript" src="js/funcoes.js">
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+</head>
+
+<body id="bd">
+    <header>
+        <nav id="navs" class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a id="font" class="navbar-brand" href="https://www.marvel.com/movies/the-avengers" target="_blank">The Avengers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-				  <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
 					  <a id="font1" class="nav-link" href="index.html" >Início <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-					  <a id="font2" class="nav-link" href="#">Quem somos</a>
-					</li>
-					<li class="nav-item">
-					  <a id="font3" class="nav-link" href="cadastro.html">Entre em contato</a>
-					</li>
-				  </ul>
-				</div>
-			</nav>
-		</header>
-		<main role="main">
+                    <li class="nav-item">
+                        <a id="font3" class="nav-link" href="cadastro.html">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="font2" class="nav-link" href="quem_somos.html">Quem somos</a>
+                    </li>
 
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				  <li data-target="#myCarousel" data-slide-to="1"></li>
-				  <li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="first-slide" src="img/loki.jpg" alt="First slide">
-						<div class="container">
-							<div class="carousel-caption text-left">
-								<h1>Example headline.</h1>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-								<!-- Botão para acionar modal -->
-								<button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#modalExemplo" role="button">Saiba Mais</button>
-							</div>
-						</div>
-					</div>
-			  
-					<!-- Modal -->
-					<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">Botões Informativos</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="img/loki.jpg" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Esquemas de cores comuns para viloes.</h1>
+                            <p>
+								<b class="font-weight-bold">Verde Não Natural</b>,
+									frequentemente usado para caracteres radioativos e outras pessoas más,
+							
+								<b class="font-weight-bold">Preto</b>,
+									é uma das cores mais comuns usadas em vilões.
+
+							</p>
+                            <!-- Botão para acionar modal -->
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#modalExemplo" role="button">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide" src="img/ultron.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Esquemas de cores comuns para viloes.</h1>
+                            <p>
+								<b class="font-weight-bold">Prata</b>
+								Os viloes ricos e arrogantes geralmente são encontrados com prata,
+								<b class="font-weight-bold">Vermelho Sangue</b>
+								usados em viloes loucos</p>
+                            <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#modalExemplo" role="button">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="img/THANOS.jpg" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Esquemas de cores comuns para viloes.</h1>
+                            <p>	
+								<b class="font-weight-bold">Roxo</b>
+								é associado ao veneno,luxo e ambição.
+								
+								<b class="font-weight-bold">azuis escuros</b>
+								frequentemente encontrado com personagens malignos de sangue azul</p>
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#modalExemplo" role="button">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"> Os Viloes </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 									<span aria-hidden="true">&times;</span>
 									</button>
-								</div>
-								<div class="modal-body">
-									Trasmitindo mensagens através de cores, usando um punhado de cores utilitárias. Inclui suporte para estilização que passam uma mensagem.
+                            </div>
+                            <div class="modal-body">
+                                Ao mesmo tempo que os heróis são musculosos e poderosos, simbolizando autoridade, seus antagonistas, os vilões, também o são. E como os criadores iriam diferenciar heróis coloridos e musculosos de vilões também coloridos e musculosos? Durante uma época os vilões eram desenhados como pessoas defeituosas, feias, corcundas, sem algum dos membros ou olhos, mas isso foi abandonado. Um padrão que se estabelece ferozmente nos quadrinhos de super-heróis é que os mocinhos vestem cores primárias e os vilões secundárias e terciárias . Essa diferenciação chegou até a ser citada pelos autores Matt Fraction, Mike e Lee Allred em uma edição de Fundação Futuro.
 
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- fimModal -->
-				  
-				  <div class="carousel-item">
-					<img class="second-slide" src="img/ultron.jpg" alt="Second slide">
-					<div class="container">
-					  <div class="carousel-caption">
-						<h1>Another example headline.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#modalExemplo" role="button">Saiba Mais</button>
-					  </div>
-					</div>
-				  </div>
-				  <div class="carousel-item">
-					<img class="third-slide" src="img/THANOS.jpg" alt="Third slide">
-					<div class="container">
-					  <div class="carousel-caption text-right">
-						<h1>One more for good measure.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#modalExemplo" role="button">Saiba Mais</button>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a>
-			</div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fimModal -->
 
-
-		  <!-- Marketing messaging and featurettes
+        <!-- Marketing messaging and featurettes
 		  ================================================== -->
-		  <!-- Wrap the rest of the page in another container to center all the content. -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
 
-		  <div class="container marketing">
+        <div class="container marketing">
 
-			<!-- Three columns of text below the carousel -->
-			<div class="scroll">
-				<div class="row">
-					<div class="rolagem">
-					  <div class="col-lg-4">
-						<img class="rounded-circle" src="img/escudom.png" alt="Generic placeholder image" width="140" height="140">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-						<input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaocap()">
-					  </div><!-- /.col-lg-4 -->
-					  <div class="col-lg-4">
-						<img class="rounded-circle" src="img/ironm.png" alt="Generic placeholder image" width="140" height="140">
-						<h2>Heading</h2>
-						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-						<input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaoiron()">
-					  </div><!-- /.col-lg-4 -->
-					  <div class="col-lg-4">
-						<img class="rounded-circle" src="img/thorm.png" alt="Generic placeholder image" width="140" height="140">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaothor()">
-					  </div><!-- /.col-lg-4 -->
-					  <div class="col-lg-4">
-						<img class="rounded-circle" src="img/hulkm.png" alt="Generic placeholder image" width="140" height="140">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaohulk()">
-					  </div><!-- /.col-lg-4 -->
-					  <div class="col-lg-4">
-						<img class="rounded-circle" src="img/viuvam.png" alt="Generic placeholder image" width="140" height="140">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaoviuva()">
-					  </div><!-- /.col-lg-4 -->
-					  <div class="col-lg-4">
-						<img class="rounded-circle" src="img/gaviaom.png" alt="Generic placeholder image" width="140" height="140">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaogaviao()">
-					  </div><!-- /.col-lg-4 -->
-				  </div><!-- /.rolagem -->
-				</div><!-- /.row -->
-			</div><!-- /.scroll -->
-
-
-			<!-- START THE FEATURETTES -->
-			<div class="texto">
-				<hr class="featurette-divider">
-
-				<div class="row featurette">
-				  <div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading">As Cores <span class="text-muted">Vingadores</span></h2>
-					<p class="lead"> o design de um personagem pode auxiliar a maneira como uma história é contada e como ele pode reforçar sentimentos e qualidades de suas identidades. Saiba por que identidade pessoal e identidade visual não estão ligadas. Entenda por que a identificação visual de um personagem é importante e como isso faz com que seu direcionamento na história se torne mais claro. Veja como os símbolos e as histórias que eles contam e que contam sobre eles possuem um poder imenso sobre nós.
-						Qual o papel do uniforme para um super-herói? E as cores a que ele está associado? Como isso ajuda ou atrapalha na sua escolha de agira como um defensor dos fracos e dos oprimidos no seu dia-a-dia de combate ao crime e na defesa da lei e da justiça? Por que os heróis usam sempre a mesma roupa? Como a identidade visual dos super-heróis interfere na sua identidade pessoal?
-					</p>
-				  </div>
-				  <div class="col-md-5 order-md-1">
-					<img class="featurette-image img-fluid mx-auto" src="A" alt="Generic placeholder image">
-				  </div>
-				</div>
-			</div>			
-			
-			<div class="cap">
-				<hr class="featurette-divider">
-			
-				<div class="row featurette">
-				  <div class="col-md-7">
-					<h2 class="featurette-heading">Capitão America. <span class="text-muted">O Primeiro Vingador</span></h2>
-					<p class="lead"> Uniformes deles terem essas cores? A resposta não é puro e simples patriotismo, se fosse isso ou só isso tudo bem, mas o problema é que na realidade essas personagens são formas de representar os Estados Unidos, uma forma indireta de dizer que esse país é “do bem” e que eles estão sempre prontos para salvar o mundo. Mais subliminarmente, é uma maneira de dizer “nós somos poderosos, vencemos qualquer inimigo nós estamos do lado certo e quem está contra nós está errado e é do mal”  </div>
-				  <div class="col-md-5">
-					<img class="featurette-image img-fluid mx-auto" src="img/cap.png" alt="Generic placeholder image">
-				  </div>
-				</div>
-			</div>
-			
-			<div class="iron">
-				<hr class="featurette-divider">
-
-				<div class="row featurette">
-				  <div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-				  </div>
-				  <div class="col-md-5 order-md-1">
-					<img class="featurette-image img-fluid mx-auto" src="img/ironv2.png" alt="Generic placeholder image" title="Imagem de Ananta Sarkar por Pixabay"
-					<!--<a href="https://pixabay.com/pt/users/Ananta_sarkar-9121102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269"><!--</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">--Pixabay><!--</a>"-->
-				  </div>
-				</div>
-			</div>
-				
-			<div class="thor">
-				<hr class="featurette-divider">
-
-				<div class="row featurette">
-				  <div class="col-md-7">
-					<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-				  </div>
-				  <div class="col-md-5">
-					<img class="featurette-image img-fluid mx-auto" src="img/thor.png" alt="Generic placeholder image">
-				  </div>
-				</div>
-			</div>
-			
-			<div class="hulk">
-				<hr class="featurette-divider">
-
-				<div class="row featurette">
-				  <div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-				  </div>
-				  <div class="col-md-5 order-md-1">
-					<img class="featurette-image img-fluid mx-auto" src="img/hulkv2.png" alt="Generic placeholder image" title="Imagem de Ananta Sarkar por Pixabay" <!--<a href="https://pixabay.com/pt/users/Ananta_sarkar-9121102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269"><!--</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">--Pixabay><!--</a>"-->
-				  </div>
-				</div>
-			</div>
-			
-			<div class="viuva">
-				<hr class="featurette-divider">
-
-				<div class="row featurette">
-				  <div class="col-md-7">
-					<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-				  </div>
-				  <div class="col-md-5">
-					<img class="featurette-image img-fluid mx-auto" src="img/viuva.png" alt="Generic placeholder image">
-				  </div>
-				</div>
-			</div>
-			
-			<div class="gaviao">
-				<hr class="featurette-divider">
-
-				<div class="row featurette">
-				  <div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-				  </div>
-				  <div class="col-md-5 order-md-1">
-					<img class="featurette-image img-fluid mx-auto" src="img/gaviao.png" alt="Generic placeholder image" title="Imagem de Ananta Sarkar por Pixabay" <!--<a href="https://pixabay.com/pt/users/Ananta_sarkar-9121102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269"><!--</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">--Pixabay><!--</a>"-->
-				  </div>
-				</div>
-			</div>
-			
-			<!-- /END THE FEATURETTES -->
-
-		  </div><!-- /.container -->
+            <!-- Three columns of text below the carousel -->
+            <div class="scroll">
+                <div class="row">
+                    <div class="rolagem">
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/escudom.png" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Capitão América</h2>
+                            <p>Ambiente o seu espaço com a cores do Primeiro Vingador!</p>
+                            <input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaocap()">
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/ironm.png" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Homem de Ferro</h2>
+                            <p>Ambiente seu espaço com as cores do excêntrico Tony Stark!</p>
+                            <input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaoiron()">
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/thorm.png" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Thor</h2>
+                            <p>Ambiente seu espaço com as cores do Deus do Trovão</p>
+                            <input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaothor()">
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/hulkm.png" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Hulk</h2>
+                            <p>Ambiente seu espaço com as cores do Incrível Dr Robert Bruce Banner!</p>
+                            <input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaohulk()">
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/viuvam.png" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Viúva Negra</h2>
+                            <p>Ambiente seu espaço com as cores da espiã russa Natasha Romanoff!</p>
+                            <input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaoviuva()">
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/gaviaom.png" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Gavião Arqueiro</h2>
+                            <p>Ambiente seu espaço com as cores do grande Clint Barton</p>
+                            <input type="button" class="btn btn-info " value="Mudar fundo" onclick="botaogaviao()">
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.rolagem -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.scroll -->
 
 
-		  <!-- FOOTER -->
-		  <footer class="container">
-			<p class="float-right"><a href="#">Voltar ao Inicio</a></p>
-			<p>Criado em 2019 - Todos os Direitos Reservados - Imagens Retiradas do <a href="https://www.pinterest.pt/">Pinterest</a></p>
-		  </footer>
-		</main>
+            <!-- START THE FEATURETTES -->
+            <div class="texto">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">As Cores <span class="text-muted">Vingadores</span></h2>
+                        <p class="lead"> o design de um personagem pode auxiliar a maneira como uma história é contada e como ele pode reforçar sentimentos e qualidades de suas identidades. Saiba por que identidade pessoal e identidade visual não estão ligadas. Entenda
+                            por que a identificação visual de um personagem é importante e como isso faz com que seu direcionamento na história se torne mais claro. Mas aqueles que prestam atenção especial observam que nem todas as paletas são aleatórias. de fato, existe uma ciência de como as cores são usadas nos seus quadrinhos favoritos e, embora possa parecer uma coisa pequena, as cores usadas ​​afetam drasticamente a sua experiência como leitor.
+							o esquema de cores mais tradicional é preto versus branco, com as cores escuras geralmente simbolizando o mal. no entanto, com o tempo, isso evoluiu para incluir mais cores,
+							Qual o papel do uniforme para um super-herói? E as cores a que ele está associado? Como isso ajuda ou atrapalha na sua escolha de agir como um defensor dos fracos e dos oprimidos no seu dia-a-dia de
+                            combate ao crime e na defesa da lei e da justiça? Por que os heróis usam sempre a mesma roupa? Como a identidade visual dos super-heróis interfere na sua identidade pessoal?
+							<br><b class="font-weight-bold">Esquemas de cores comuns para mocinhos:</b><br>
+							
+							<b class="font-weight-bold">branco</b>
+								muitas vezes representa um herói do tipo Pacifista;
+
+							<b class="font-weight-bold">azul</b>
+								o herói supremo;
+
+							<b class="font-weight-bold">	vermelho brilhante</b>
+								também usado para o herói supremo;
+
+							<b class="font-weight-bold">	verde</b>
+								geralmente melhor para heróis que estão mais próximos da natureza
+
+							<b class="font-weight-bold">	marrom</b>
+								Comumente
+								usado para heróis aposentados e aqueles próximos à natureza;
+
+							<b class="font-weight-bold">	cinza</b>
+								o sábio velho guru ou mentor;
+
+							<b class="font-weight-bold">	ouro</b>
+								muitas vezes para o cara que mostra o herói por ser incrível em tudo;
+
+							<b class="font-weight-bold">	amarelo</b>
+								freqüentemente usado para o herói ou companheiro mais fraco, ou para o garoto mais experiente em tecnologia do grupo;
+
+							<b class="font-weight-bold">	Preto</b>
+								o herói relutante pode ser encontrado vestido de preto na maioria das vezes;						
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="img/hev.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cap">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Capitão América<br><span class="text-muted">O Primeiro Vingador</span></h2>
+                        <p class="lead">  Nos quadrinhos o super soldado está a frente de um super exército. As forças armadas dos Estados
+                            Unidos da América. Criado por Jack Kirby e Joe Simon, Capitain America, foi publicado pela Marvel Comics em 1940. A identidade do herói é a do soldado Steve Rogers, da base de operações dos Estados Unidos, país onde nasceu.
+							<br><b>obs: As cores presentes na roupa do capitão:</b> azul, vermelho e branco não faz parte apenas de uma arte desinteressada e espontânea, é também uma referência direta aos Estados Unidos.
+					</div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="img/cap.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="iron">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Homem de Ferro<br><span class="text-muted">Mais conhecido como Tony Stark</span></h2>
+                        <p class="lead">Quando Stan Lee começou a pensar nos traços característicos do personagem Homem de Ferro, ele pensou em criar um homem rico e glamoroso. Com isso em mente, Tony Stark acabou se baseando no lendário empresário estadunidense Howard
+                            Hughes, um inventor, aventureiro, multibilionário e mulherengo notável da época.
+                            <br>Na verdade, Lee criou o Homem de Ferro como um desafio, pois era a oposição de tudo o que os aficionados da Marvel estavam habituados a ver seus heróis representar.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="img/ironv2.png" alt="Generic placeholder image" title="Imagem de Ananta Sarkar por Pixabay" <!--<a href="https://pixabay.com/pt/users/Ananta_sarkar-9121102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">
+                        <!--</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">--Pixabay><!--</a>"-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="thor">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">O Deus do Trovão<br><span class="text-muted">Thor</span></h2>
+                        <p class="lead">A representação da imagem do Deus Thor como muitos conhecem, (por causa principalmente do personagem dos filmes) está um pouco distante do que esse poderoso Deus transmite aos seus seguidores e transmitiu com maior intensidade
+                            em tempos passados.
+                            <br>De barba e cabelos ruivos, o Deus do trovão tinha um semblante austero, que impõem medo e receio. Afinal, foi sua energia que deu origem às tempestades, trovões e raios características as quais fogem um pouco da expressão
+                            benevolente e enfeitada pelas histórias de fantasia.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="img/thor.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hulk">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Dr Robert Bruce Banner<br><span class="text-muted">O incrível Hulk</span></h2>
+                        <p class="lead">O “Incrível Hulk” foi criado em 1962 por Jack Kirby e por Stan Lee, que é um dos maiores nome quando se fala em heróis e história em quadrinhos. Originalmente Hulk é o selvagem e poderoso álter-ego do Dr. Robert Bruce Banner, um
+                            cientista que foi atingido pelos mortais raios gamas e em vez de morrer acabou criando super-poderes. Esses poderes sobre humanos faziam com que ele virasse um ser enorme, com uma força descomunal (ele já ergueu 150 bilhões
+                            de toneladas) e que tinha a pele cinza, isso mesmo, cinza. Quando foi concebido Hulk era cinza, mas devido a problemas na impressão ele acabou ficando meio esverdeado, isso acabou lhe gerando o apelido de "Gigante Esmeralda"
+                            e foi muito bem aceito pelo público, por isso nunca mais tentaram mudar sua cor para a original.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="img/hulkv2.png" alt="Generic placeholder image" title="Imagem de Ananta Sarkar por Pixabay" <!--<a href="https://pixabay.com/pt/users/Ananta_sarkar-9121102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">
+                        <!--</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">--Pixabay><!--</a>"-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="viuva">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Natasha Romanoff<br><span class="text-muted">A Viúva Negra</span></h2>
+                        <p class="lead">Viúva Negra (em inglês Black Widow), (Natalia Alianovna "Natasha" Romanova, Russo: Наталья Альяновна "Наташа" Романова , também conhecida como Natasha Romanoff) é uma personagem das histórias em quadrinhos do Universo Marvel, publicado
+                            pela Marvel Comics.
+                            <br>Criada por Stan Lee (edição), Don Rico (roteiro) e Don Heck (desenhos), a personagem apareceu pela primeira vez em Tales of Suspense (abril de 1964). A personagem foi introduzida pela primeira vez como uma espiã russa,
+                            antagonista do super-herói Homem de Ferro. Mais tarde, ela fugiu para os Estados Unidos, tornando-se um agente da S.H.I.E.L.D. e membro da equipe de super-heróis Vingadores.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="img/viuva.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="gaviao">
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">O Gavião Arqueiro<span class="text-muted"></span></h2>
+                        <p class="lead">O Gavião Arqueiro surgiu como um vilão relutante em Tales of Suspense 57, de 1964, criado por Stan Lee e Don Heck. Aquela revista publicava as aventuras do Homem de Ferro e na edição em questão, a então vilã Viúva Negra manipula
+                            o Gavião Arqueiro para colocá-lo contra o “vingador dourado” e roubar planos de Tony Stark.
+                            <br> Apesar desse início, as próximas aparições do personagem, em Tales of Suspense 60 e 64 deixaram bem claro que ele era um homem bem intencionado, que virou um herói uniformizado por inspiração do Homem de Ferro, mas que
+                            foi acusado injustamente de um roubo e se tornou um procurado da justiça.</p><br><br>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="img/gaviao.png" alt="Generic placeholder image" title="Imagem de Ananta Sarkar por Pixabay" <!--<a href="https://pixabay.com/pt/users/Ananta_sarkar-9121102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">
+                        <!--</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4228269">--Pixabay><!--</a>"-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+        <!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Voltar ao Inicio</a></p>
+            <p>Criado em 2019 - Todos os Direitos Reservados - Imagens Retiradas do <a href="https://www.pinterest.pt/">Pinterest</a></p>
+        </footer>
+    </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../assets/js/vendor/holder.min.js"></script>
-  </body>
+</body>
+
 </html>
